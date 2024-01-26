@@ -11,6 +11,10 @@
     "README.md",
     "LICENSE"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rameel/vue-hotkey.git"
+  },
   "author": "rameel <rameel-b@hotmail.com>",
   "license": "MIT",
   "scripts": {
