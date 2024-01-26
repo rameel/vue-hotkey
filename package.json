@@ -1,0 +1,35 @@
+{
+  "name": "@ramstack/vue-hotkey",
+  "description": "A lightweight package simplifies the handling of keyboard shortcuts within Vue applications. No external dependencies",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/vue-hotkey.esm.js",
+  "module": "dist/vue-hotkey.esm.js",
+  "types": "dist/vue-hotkey.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "author": "rameel <rameel-b@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "vite build"
+  },
+  "keywords": [
+    "hotkey",
+    "shortkey",
+    "shortcut"
+  ],
+  "peerDependencies": {
+    "vue": "^3.3.0"
+  },
+  "devDependencies": {
+    "@ramstack/hotkey": "^1.0.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@vitejs/plugin-vue": "^4.4.0",
+    "terser": "^5.27.0",
+    "vite": "^5.0.0",
+    "vite-plugin-dts": "^3.7.2"
+  }
+}
