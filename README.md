@@ -91,3 +91,6 @@ To specify the event name to be listened for, use the argument directive. The de
 ```vue
 <div v-hotkey:keyup.ctrl+k="() => { console.log('Search...') }"></div>
 ```
+
+## License
+This package is released under the **MIT License**.
