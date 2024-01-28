@@ -5,7 +5,7 @@
   "type": "module",
   "main": "dist/vue-hotkey.esm.js",
   "module": "dist/vue-hotkey.esm.js",
-  "types": "dist/vue-hotkey.d.ts",
+  "types": "dist/types/vue-hotkey.d.ts",
   "files": [
     "dist",
     "README.md",
@@ -31,7 +31,7 @@
     "vue": "^3.3.0"
   },
   "devDependencies": {
-    "@ramstack/hotkey": "^1.0.0",
+    "@ramstack/hotkey": "^1.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.1.6",
