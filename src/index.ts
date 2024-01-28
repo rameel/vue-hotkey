@@ -1,4 +1,4 @@
-import { ObjectDirective} from "vue";
+import { ObjectDirective } from "vue";
 import { registerHotkey } from "@ramstack/hotkey";
 
 const optionKeys = ["stop", "passive", "prevent", "once", "capture", "window", "document"];
