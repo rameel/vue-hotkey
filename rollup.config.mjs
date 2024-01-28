@@ -21,7 +21,7 @@ const terserOptions = {
 };
 
 export default [{
-    input: "src/index.ts",
+    input: "src/vue-hotkey.ts",
     output: [{
         file: "dist/vue-hoteky.esm.js",
         format: "esm"
