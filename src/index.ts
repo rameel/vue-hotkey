@@ -24,7 +24,7 @@ export const vHotkey: ObjectDirective<HTMLElement, (e: KeyboardEvent) => void> =
                 function(e) {
                     stop && e.stopPropagation();
                     prevent && e.preventDefault();
-                    value.call(this, e);
+                    value?.call(this, e);
                 },
                 arg ?? "keydown",
                 {
