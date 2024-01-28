@@ -1,4 +1,4 @@
-import { ObjectDirective} from "vue";
+import { ObjectDirective } from "vue";
 import { registerHotkey } from "@ramstack/hotkey";
 
 const optionKeys = ["stop", "passive", "prevent", "once", "capture", "window", "document"];
@@ -24,7 +24,7 @@ export const vHotkey: ObjectDirective<HTMLElement, (e: KeyboardEvent) => void> =
                 function(e) {
                     stop && e.stopPropagation();
                     prevent && e.preventDefault();
-                    value.call(this, e);
+                    value?.call(this, e);
                 },
                 arg ?? "keydown",
                 {
@@ -43,5 +43,5 @@ export const vHotkey: ObjectDirective<HTMLElement, (e: KeyboardEvent) => void> =
 }
 
 function createKey(modifiers: Record<string, boolean>): string {
-    return `_b_hotkey[${ Object.keys(modifiers).join("+") }]`;
+    return `__hotkey[${ Object.keys(modifiers).join("+") }]`;
 }
