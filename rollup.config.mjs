@@ -23,10 +23,10 @@ const terserOptions = {
 export default [{
     input: "src/vue-hotkey.ts",
     output: [{
-        file: "dist/vue-hoteky.esm.js",
+        file: "dist/vue-hotkey.esm.js",
         format: "esm"
     }, {
-        file: "dist/vue-hoteky.esm.min.js",
+        file: "dist/vue-hotkey.esm.min.js",
         format: "esm",
         plugins: [terser(terserOptions)]
     }, {
