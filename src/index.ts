@@ -43,5 +43,5 @@ export const vHotkey: ObjectDirective<HTMLElement, (e: KeyboardEvent) => void> =
 }
 
 function createKey(modifiers: Record<string, boolean>): string {
-    return `_b_hotkey[${ Object.keys(modifiers).join("+") }]`;
+    return `__hotkey[${ Object.keys(modifiers).join("+") }]`;
 }
