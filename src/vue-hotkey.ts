@@ -48,6 +48,10 @@ export const HotkeyPlugin : ObjectPlugin = {
     },
 };
 
+export {
+    registerHotkey
+}
+
 function createKey(modifiers: Record<string, boolean>): string {
     return `__hotkey[${ Object.keys(modifiers).join("+") }]`;
 }
