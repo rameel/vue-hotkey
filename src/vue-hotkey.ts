@@ -1,4 +1,4 @@
-import { ObjectDirective } from "vue";
+import { ObjectDirective, ObjectPlugin } from "vue";
 import { registerHotkey } from "@ramstack/hotkey";
 
 const optionKeys = ["stop", "passive", "prevent", "once", "capture", "window", "document"];
@@ -41,6 +41,12 @@ export const vHotkey: ObjectDirective<HTMLElement, (e: KeyboardEvent) => void> =
         el[key] = null;
     }
 }
+
+export const HotkeyPlugin : ObjectPlugin = {
+    install(app) {
+        app.directive("hotkey", vHotkey);
+    },
+};
 
 function createKey(modifiers: Record<string, boolean>): string {
     return `__hotkey[${ Object.keys(modifiers).join("+") }]`;
