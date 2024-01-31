@@ -12,8 +12,6 @@ npm install --save @ramstack/vue-hotkey
 ```
 
 ### Using via CDN
-
-You can use directly from a CDN via a script tag:
 ```html
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@ramstack/vue-hotkey@1/dist/vue-hotkey.min.js"></script>
